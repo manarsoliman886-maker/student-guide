@@ -1,0 +1,874 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f8f9fc;
+    color: #25213a;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background: white;
+    min-height: 75px;
+    padding: 10px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.brand img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: #29233f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #7255b8;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 620px;
+
+    padding: 70px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #eee8ff,
+        #ffffff
+    );
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.welcome {
+    color: #7255b8;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.35;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #7255b8;
+}
+
+.intro {
+    font-size: 18px;
+    margin: 20px 0 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.main-button,
+.secondary-button {
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-button {
+    background: #7255b8;
+    color: white;
+}
+
+.secondary-button {
+    background: white;
+    color: #7255b8;
+    border: 2px solid #7255b8;
+}
+
+.hero-logo img {
+    width: 260px;
+    max-width: 100%;
+    background: white;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-title span {
+    font-size: 35px;
+}
+
+.section-title h2 {
+    display: inline-block;
+    font-size: 34px;
+    margin-right: 10px;
+}
+
+.section-description {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-box {
+    max-width: 850px;
+    margin: auto;
+
+    background: white;
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+
+    text-align: center;
+}
+
+.about-box p {
+    margin-bottom: 20px;
+}
+
+.warm-message {
+    margin-top: 25px;
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background: #f1ecff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.warm-message strong {
+    font-size: 22px;
+}
+
+
+/* =========================
+   DEPARTMENTS
+========================= */
+
+.departments {
+    background: #f1ecff;
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 30px 22px;
+
+    border-radius: 22px;
+
+    text-align: center;
+
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   PROGRAMS
+========================= */
+
+.program-box {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 22px;
+}
+
+.program-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 22px;
+
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.07);
+
+    position: relative;
+}
+
+.program-card.featured {
+    border: 2px solid #7255b8;
+}
+
+.program-number {
+    font-size: 14px;
+    color: #7255b8;
+    font-weight: bold;
+}
+
+.program-card h3 {
+    margin: 15px 0;
+}
+
+.your-program {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    background: #f1ecff;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    color: #7255b8;
+
+    font-weight: bold;
+}
+
+.note {
+    text-align: center;
+    margin-top: 25px;
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* =========================
+   STUDENT GUIDE
+========================= */
+
+.student-guide {
+    background: white;
+}
+
+.guide-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 22px;
+}
+
+.guide-card {
+    text-decoration: none;
+
+    color: #25213a;
+
+    background: #f8f9fc;
+
+    padding: 30px;
+
+    border-radius: 22px;
+
+    transition: 0.3s;
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+}
+
+.guide-card span {
+    font-size: 45px;
+}
+
+.guide-card h3 {
+    margin: 10px 0;
+}
+
+.guide-card strong {
+    display: block;
+    margin-top: 15px;
+    color: #7255b8;
+}
+
+
+/* =========================
+   DID YOU KNOW
+========================= */
+
+.did-you-know {
+    background: #eee8ff;
+}
+
+.fact-box {
+    max-width: 750px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+.fact-icon {
+    font-size: 60px;
+}
+
+.fact-box h3 {
+    margin: 15px 0;
+    font-size: 23px;
+}
+
+
+/* =========================
+   QUIZ
+========================= */
+
+.quiz-section {
+    background: white;
+}
+
+.quiz-box {
+    max-width: 650px;
+
+    margin: auto;
+
+    padding: 40px;
+
+    background: #f8f9fc;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+#question-number {
+    color: #7255b8;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#question {
+    margin-bottom: 25px;
+}
+
+#answers button {
+    display: block;
+
+    width: 100%;
+
+    margin: 12px 0;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+#answers button:hover {
+    background: #e9e1ff;
+}
+
+#quiz-result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   FINAL SECTION
+========================= */
+
+.final-section {
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #7255b8,
+        #9a7bd4
+    );
+
+    color: white;
+}
+
+.final-section img {
+    width: 120px;
+
+    background: white;
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #211d2e;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+footer p {
+    opacity: 0.8;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-logo img {
+        width: 190px;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .section-title h2 {
+        font-size: 27px;
+    }
+
+}
+.card {
+    text-decoration: none;
+    color: #25213a;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.department-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #7255b8;
+    font-weight: bold;
+}
+.program-card {
+    text-decoration: none;
+    color: #25213a;
+    transition: 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.program-card .department-link {
+    display: block;
+    margin-top: 18px;
+    color: #7255b8;
+    font-weight: bold;
+}
+.new-student-steps {
+    background: #f1ecff;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
+}
+
+.step-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 22px;
+    position: relative;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.step-number {
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    color: #7255b8;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.step-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.step-card h3 {
+    margin-bottom: 10px;
+}
+
+.step-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #7255b8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.important-note {
+    max-width: 850px;
+    margin: 35px auto 0;
+    padding: 20px 25px;
+    background: white;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+.new-student-steps {
+    background: #f1ecff;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
+}
+
+.step-card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 22px;
+    position: relative;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.step-number {
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    color: #7255b8;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.step-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.step-card h3 {
+    margin-bottom: 10px;
+}
+
+.step-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #7255b8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.important-note {
+    max-width: 850px;
+    margin: 35px auto 0;
+    padding: 20px 25px;
+    background: white;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+.video-link {
+    display: block;
+    margin-top: 12px;
+    padding: 10px 15px;
+    background: #f1ecff;
+    color: #7255b8;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.video-link:hover {
+    background: #e5dcff;
+    transform: translateY(-2px);
+}
+```css
+/* =========================
+   APPLICATION REQUIREMENTS
+========================= */
+
+.requirements-details {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.requirements-details summary {
+    color: #7255b8;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+}
+
+.requirements-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.requirements-details summary:hover {
+    text-decoration: underline;
+}
+
+.requirements-image {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f8f9fc;
+    border-radius: 15px;
+}
+
+.requirements-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+```
+/* تكبير صورة متطلبات التقديم */
+
+.requirements-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.requirements-image img:hover {
+    transform: scale(1.02);
+}
+
+/* نافذة الصورة الكبيرة */
+
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.image-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.close-image {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.requirements-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    cursor: zoom-in;
+}
+
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.image-modal.show {
+    display: flex;
+}
+
+.image-modal #largeImage {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.close-image {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 100000;
+}
